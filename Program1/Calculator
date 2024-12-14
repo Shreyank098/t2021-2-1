@@ -1,0 +1,19 @@
+class Calculator:
+    @staticmethod
+    def calculate(a, b, operation):
+        if operation == 'addition':
+            return a + b
+        elif operation == 'subtraction':
+            return a - b
+        elif operation == 'multiplication':
+            return a * b
+        elif operation == 'division':
+            if b != 0:
+                return a / b
+            else:
+                return "Division by zero is not allowed."
+        else:
+            return "Invalid operation"
+
+result = Calculator.calculate(10.5, 2.5, 'addition')
+print(result) 
